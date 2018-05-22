@@ -1,0 +1,72 @@
+#root{
+	padding: 1em;
+	margin: 0 auto;
+	max-width: 33em;
+	cursor: default;
+}
+
+.task_count{
+	color: gray;
+}
+
+.grayBorder{
+	border-bottom: 0.5px solid gray;
+	margin-left: inherit;
+}
+
+.grayBorder::before {
+	content: url('./../images/Group.svg');
+	margin-right: 0.5em;
+}
+
+.grayBorder:hover{
+	background-color: #dae2ef;
+}
+
+#mainLabel{
+	margin-bottom: 20px;
+	font-size: 2em;
+
+}
+
+#mainBorder{
+	border-bottom: 0.5px solid gray;
+	margin-bottom: 0.5em;
+}
+
+.incomplete::before{
+	content: url('./../images/Incomplete.svg');
+	margin-right: 0.5em;
+}
+
+.complete::before{
+	content: url('./../images/Completed.svg');
+	margin-right: 0.5em;
+}
+
+.locked::before{
+	content: url('./../images/Locked.svg');
+	margin-right: 0.5em;
+}
+
+.locked, .complete, .incomplete{
+	border-bottom: 0.5px solid gray;
+	margin-top: 0.5em;
+}
+.locked:hover, .complete:hover, .incomplete:hover{
+	background-color: #dae2ef;
+}
+
+#GroupLabel{
+	color: blue;
+	float:right;
+	margin-top:0.5em;
+}
+
+#TaskLabel{
+	font-size: 2em;
+}
+
+.task_count{
+	margin-left: 1em;
+}
